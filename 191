@@ -1,0 +1,9 @@
+class Solution(object)
+    k = int(0)
+    def hammingWeight(self, n)
+        self.k = self.k + n % 2
+        n = n / 2
+        if n < 1:
+            return self.k
+        else
+            return self.hammingWeight(n)
